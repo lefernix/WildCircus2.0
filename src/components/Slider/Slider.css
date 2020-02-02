@@ -1,0 +1,14 @@
+.containerSlide {
+    width: 100%;
+    margin: auto;
+}
+
+.containerSlide img {
+    width: 100%;
+    z-index: 10;
+}
+
+.nuageorange {
+    display: inline-block;
+    z-index: auto;
+}

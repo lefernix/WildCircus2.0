@@ -1,0 +1,12 @@
+.menu__burger {
+    align-items: center;
+    position: absolute;
+    top: 27px;
+    left: 0px;
+}
+
+.burger__container{
+    border: orange solid;
+    text-align: initial;
+    font-size: 30px;
+}
