@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import './TarifPage.css';
 
 function TarifPage() {
-
+    const [ prestations, setPrestations ] = useState([]);
     useEffect(() => {
         const fetchPrestations = async () => {
-            const result = await api.get(`/api/v1/prestations`);
+            const result = await axios.get(`/api/v1/prestations`);
+            setPrestations(result.data);
           };
           fetchPrestations();
-    }, [ville, date, tarifsAdulte, tarifsEnfants])
-    
+    }, [])
+
     return(
         <div className="TarifPage">
             <div className="description">
@@ -18,16 +21,19 @@ function TarifPage() {
             <div className="prestation__list" key={prestation.id}>
                 <ul className="each__prestation">
                     <li className="prestation__ville">
-                        <p>Ville:{ville}</p>
+                        <p>Ville:{prestation.ville}</p>
                     </li>
                     <li>
-                        <p>Date: {date}</p>
+                        <p>Description: {prestation.description}</p>
                     </li>
                     <li>
-                        <p>Tarifs (adulte): {tarifsAdulte}</p>
+                        <p>Tarifs (enfants): {prestation.tarif_Enfant}</p>
                     </li>
                     <li>
-                        <p>Tarifs (enfant): {tarifsEnfants}</p>
+                        <p>Tarifs (adultes): {prestation.tarif_Adulte}</p>
+                    </li>
+                    <li>
+                        <p>Note: {prestation.note}/5</p>
                     </li>
                 </ul>
             </div>

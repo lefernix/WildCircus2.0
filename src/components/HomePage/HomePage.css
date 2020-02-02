@@ -1,14 +1,23 @@
 .article__list__item {
     width: auto;
-    margin: 0% 0px 5% 0px;
+    margin: 0% 3% 10% 3%;
     background: rgba(255,255,255,0.2);
     padding: 10px;
     border: 2px solid #fff;
     border-radius: 20px/50px;
     background-clip: padding-box;
     text-align: center;
+    font-size: 27px;
 }
 
 .articles__list {
-    background-color: #f99797
+    background-color: #F8B44E;
+    padding-bottom: 10px;
+    padding-top: 20%;
+}
+
+p {
+
+    color: white;
+    font-weight:bold;
 }

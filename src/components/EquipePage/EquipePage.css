@@ -1,16 +1,16 @@
-.TarifPage {
+.EquipePage {
     position: relative;
     overflow: hidden;
     background-color: #F8B44E;
     padding-bottom: 10px;
 }
 
-.each__prestation {
+.each__artistes {
     padding: 2em;
     text-align: center;
     position: relative;
     display: block;
     background: rgba(255,255,255,0.2);
     list-style: none;
-    border: thick double #ce3232;
+    border: thick double #32a1ce;
 }

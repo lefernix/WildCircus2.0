@@ -10,6 +10,9 @@ import {
 } from "react-router-dom";
 import HistoryPage from './components/HistoryPage/HistoryPage';
 import TarifPage from './components/TarifPage/TarifPage';
+import EquipePage from './components/EquipePage/EquipePage';
+import ContactPage from './components/ContactPage/ContactPage';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -31,12 +34,13 @@ function App() {
           <TarifPage/>
         </Route>
         <Route path="/lequipe">
-    
+          <EquipePage/>
         </Route>
         <Route path="/contactus">
-    
+          <ContactPage/>
         </Route>
       </Switch>
+      <Footer/>
     </div>
   );
 }

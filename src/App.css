@@ -1,11 +1,12 @@
 .App {
-    background: #ffffff ;
+    background-color: white;
+    object-fit: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     font-family: 'Amatic SC', cursive;
-    color: #363635;
+    color: #e68516;
     font-size: 20px;
     
 }
@@ -20,11 +21,13 @@ strong {
 }
 
 .banner{
-  background-color:#f99797;
-  font-size: 30px;
-  text-decoration: none;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row-reverse;
-  padding: 5%;
+    font-size: 60px;
+    text-align: center;
+    background-image: url(https://st2.depositphotos.com/4202565/9540/v/950/depositphotos_95408650-stock-illustration-vintage-circus-background.jpg);
+    background-position: center;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
 }
